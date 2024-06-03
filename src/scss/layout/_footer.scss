@@ -1,0 +1,458 @@
+@use '../abstracts/variables' as *;
+// Styles from footer section
+// footer {
+//   background-color: #BCBCBC;
+//   padding-top: 6rem;
+//   padding-bottom: 1rem;
+//   padding-inline: 6rem;
+//   // text-align: center;
+//   font-size: 14px;
+//   // height: 21rem;
+
+//   .row-footer {
+//     .col-term-of-use {
+//       color: #000000;
+//       text-decoration: none;
+//       font-family: 'Poppins-Regular';
+//       font-size: 0.9rem;
+//     }
+
+//     .col-section-footer {
+//       a {
+//         color: #000000;
+//         text-decoration: none;
+//         font-family: 'Poppins-Regular';
+//         font-size: 0.9rem;
+
+//         &:hover {
+//           text-decoration: underline;
+//           color: mediumblue
+//         }
+//       }
+//     }
+//   }
+
+//   .row-icon-footer {
+//     display: flex;
+//     justify-content: end;
+//     margin-left: 3rem;
+//     margin-top: 5rem;
+
+//     .col-icon-footer {
+//       .a-link-red{
+//         button {
+//           // height: 30px;
+//           img {
+//             height: 50px;
+//             padding-inline: 0.6rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+//   .title-element-footer {
+//     font-family: 'Poppins-Semibold';
+//     font-size: 1.2rem;
+//   }
+
+// }
+
+
+footer {
+  .container-fluid {
+    background-color: #BCBCBC;
+
+    .section__footer {
+      .section__page__info__footer {
+        .section__page__info__title__footer {
+          font-family: 'Poppins-Semibold';
+          font-size: 1.9rem;
+        }
+
+        .section__page__info__list__footer {
+          .section__page__info__list__footer {
+            .section__info__list__item__link__footer {
+              color: #000000;
+              text-decoration: none;
+              font-family: 'Poppins-Regular';
+            }
+
+            .section__info__list__item__link__footer:hover {
+              text-decoration: underline;
+              color: mediumblue
+            }
+          }
+        }
+
+      }
+
+      .section__terms__footer {
+        span {
+          color: #000000;
+          text-decoration: none;
+          font-family: 'Poppins-Regular';
+        }
+      }
+
+      .section__social__media__footer {
+
+        .section__social__media__link__footer {
+          button {
+            img {
+              height: 50px;
+              padding-inline: 0.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    .container-fluid {
+      .section__footer {
+        padding-inline: 20px;
+        padding-block: 15px;
+
+        .section__page__info__footer {
+          .section__page__info__title__footer {
+            font-family: 'Poppins-Semibold';
+            font-size: 1.2rem;
+          }
+
+          .section__page__info__list__footer {
+            .section__page__info__list__footer {
+              margin-block: 5px;
+              font-size: 0.8rem;
+            }
+          }
+
+        }
+
+        .section__terms__footer {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+
+          .section__page__info__list__footer {
+            margin-block: 5px;
+
+            .section__page__info__list__footer {
+              span {
+                font-size: 0.8rem;
+                color: #000000;
+                text-decoration: none;
+                font-family: 'Poppins-Regular';
+              }
+            }
+          }
+        }
+
+        .section__social__media__footer {
+          display: flex;
+          justify-content: end;
+          flex-direction: column;
+          align-items: center;
+
+          .section__social__media__link__footer {
+            margin-block: 5px;
+
+            button {
+              img {
+                height: 33px;
+                // padding-inline: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .container-fluid {
+      .section__footer {
+        padding-inline: 20px;
+        padding-block: 15px;
+
+        .section__page__info__footer {
+          .section__page__info__title__footer {
+            font-family: 'Poppins-Semibold';
+            font-size: 1.2rem;
+          }
+
+          .section__page__info__list__footer {
+            .section__page__info__list__footer {
+              margin-block: 5px;
+              font-size: 0.8rem;
+            }
+          }
+
+        }
+
+        .section__terms__footer {
+          // display: flex;
+          // align-items: center;
+
+          .section__page__info__list__footer {
+            // margin-block: 5px;
+
+            .section__page__info__list__footer {
+              span {
+                font-size: 0.8rem;
+                color: #000000;
+                text-decoration: none;
+                font-family: 'Poppins-Regular';
+              }
+            }
+          }
+        }
+
+        .section__social__media__footer {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          flex-direction: row;
+
+          .section__social__media__link__footer {
+            button {
+              img {
+                height: 40px;
+                // padding-inline: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .container-fluid {
+      .section__footer {
+        padding-inline: 20px;
+        padding-block: 25px;
+
+        .section__page__info__footer {
+          .section__page__info__title__footer {
+            font-family: 'Poppins-Semibold';
+            font-size: 1.2rem;
+          }
+
+          .section__page__info__list__footer {
+            .section__page__info__list__footer {
+              margin-block: 5px;
+              font-size: 0.8rem;
+            }
+          }
+
+        }
+
+        .section__terms__footer {
+          display: flex;
+          align-items: center;
+
+          .section__page__info__list__footer {
+            margin-block: 5px;
+
+            .section__page__info__list__footer {
+              span {
+                font-size: 0.8rem;
+                color: #000000;
+                text-decoration: none;
+                font-family: 'Poppins-Regular';
+              }
+            }
+          }
+        }
+
+        .section__social__media__footer {
+          display: flex;
+          justify-content: end;
+          flex-direction: row;
+
+          .section__social__media__link__footer {
+            button {
+              img {
+                height: 40px;
+                padding-inline: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .container-fluid {
+      .section__footer {
+        padding-inline: 20px;
+        padding-block: 25px;
+
+        .section__page__info__footer {
+          .section__page__info__title__footer {
+            font-family: 'Poppins-Semibold';
+            font-size: 1.2rem;
+          }
+
+          .section__page__info__list__footer {
+            .section__page__info__list__footer {
+              margin-block: 5px;
+              font-size: 0.8rem;
+            }
+          }
+
+        }
+
+        .section__terms__footer {
+          display: flex;
+          align-items: center;
+
+          .section__page__info__list__footer {
+            margin-block: 5px;
+
+            .section__page__info__list__footer {
+              span {
+                font-size: 0.8rem;
+                color: #000000;
+                text-decoration: none;
+                font-family: 'Poppins-Regular';
+              }
+            }
+          }
+        }
+
+        .section__social__media__footer {
+          display: flex;
+          justify-content: end;
+          flex-direction: row;
+
+          .section__social__media__link__footer {
+            button {
+              img {
+                height: 40px;
+                padding-inline: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .container-fluid {
+      .section__footer {
+        padding-inline: 60px;
+        padding-block: 40px;
+
+        .section__page__info__footer {
+          .section__page__info__title__footer {
+            font-family: 'Poppins-Semibold';
+            font-size: 1.5rem;
+          }
+
+          .section__page__info__list__footer {
+            .section__page__info__list__footer {
+              .section__info__list__item__link__footer {
+                // background-color: aqua;
+              }
+            }
+          }
+
+        }
+
+        .section__terms__footer {
+          display: flex;
+          align-items: center;
+
+          .section__page__info__list__footer {
+            margin-block: 10px;
+
+            .section__page__info__list__footer {
+              span {
+                color: #000000;
+                text-decoration: none;
+                font-family: 'Poppins-Regular';
+              }
+            }
+          }
+        }
+
+        .section__social__media__footer {
+          display: flex;
+          justify-content: end;
+          flex-direction: row;
+
+          .section__social__media__link__footer {
+            button {
+              img {
+                height: 50px;
+                padding-inline: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    .container-fluid {
+      .section__footer {
+        padding-inline: 80px;
+        padding-block: 50px;
+
+        .section__page__info__footer {
+          .section__page__info__title__footer {
+            font-family: 'Poppins-Semibold';
+            font-size: 1.9rem;
+          }
+
+          .section__page__info__list__footer {
+            .section__page__info__list__footer {
+              .section__info__list__item__link__footer {
+                // background-color: aqua;
+              }
+            }
+          }
+
+        }
+
+        .section__terms__footer {
+          display: flex;
+          align-items: center;
+
+          .section__page__info__list__footer {
+            margin-block: 10px;
+
+            .section__page__info__list__footer {
+              span {
+                color: #000000;
+                text-decoration: none;
+                font-family: 'Poppins-Regular';
+              }
+            }
+          }
+        }
+
+        .section__social__media__footer {
+          display: flex;
+          justify-content: end;
+          flex-direction: row;
+
+          .section__social__media__link__footer {
+            button {
+              img {
+                height: 50px;
+                padding-inline: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

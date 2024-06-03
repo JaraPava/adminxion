@@ -1,0 +1,140 @@
+.modal-login {
+  .modal-dialog {
+    width: 24rem;
+
+    border: none;
+
+    .modal-content {
+      border-radius: 1.875rem;
+      height: 700px;
+
+      .modal-header {
+        background-color: #dbe8ee;
+        display: flex;
+        border-radius: 1.875rem 1.875rem 0 0;
+      }
+
+      .modal-body {
+        height: 622px;
+        background-color: #dbe8ee;
+        border-radius: 0rem 0rem 1.875rem 1.875rem;
+
+        .row-img-login {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 67%;
+          }
+        }
+
+        .row-modal-title {
+          text-align: center;
+          margin-block: 40px;
+
+          h2 {
+            font-family: 'Poppins-Bold';
+            font-size: 15px;
+          }
+        }
+
+        .row-form {
+          background-color: rgb(255, 255, 255);
+          border-radius: 50px;
+          margin-inline: 0px;
+          display: flex;
+
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .col-field-user {
+            margin-top: 3rem;
+            border: 1px solid #999999;
+            border-width: 2px;
+            border-radius: 30px;
+            width: 280px;
+
+            .input-group {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+              img {
+                height: 15px;
+                margin-left: 1rem;
+                margin-right: 0.4rem;
+              }
+
+              input {
+                font-family: 'Poppins-Regular';
+                font-size: 0.9rem;
+                color: #999999;
+                border-radius: 30px;
+                padding-left: 4rem;
+              }
+            }
+          }
+
+          .col-field-pass {
+            margin-block: 40px;
+            width: 280px;
+            border: 1px solid #999999;
+            border-radius: 30px;
+            border-width: 2px;
+
+            .input-group {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+              img {
+                height: 15px;
+                margin-left: 1rem;
+                margin-right: 0.4rem;
+              }
+
+              input {
+                font-family: 'Poppins-Regular';
+                font-size: 0.9rem;
+                color: #999999;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+          }
+
+          .col-btn-login {
+            width: 100%;
+            text-align: center;
+
+            button {
+              border-radius: 30px;
+              color: white;
+              background-color: #409FC7;
+              width: 150px;
+              font-family: 'Poppins-Semibold';
+              font-size: 30pxrem;
+            }
+          }
+
+          .col-btn-pde {
+            margin-top: 20px;
+            margin-bottom: 35px;
+            width: 100%;
+            text-align: center;
+
+            button {
+              border-radius: 30px;
+              color: white;
+              background-color: #409FC7;
+              width: 220px;
+              font-family: 'Poppins-Semibold';
+              font-size: 30pxrem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

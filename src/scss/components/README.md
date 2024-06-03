@@ -1,0 +1,2 @@
+## ¿Qué puedo agregar aquí en components?
+Para componentes pequeños, existe la carpeta componentes. Para componentes pequeños, existe la carpeta componentes/. Mientras que el diseño/ es macro (que define la estructura alámbrica global), los componentes/ se centran más en los widgets. Contiene todo tipo de módulos específicos como un control deslizante, un cargador, un widget y básicamente cualquier cosa por el estilo. Por lo general, hay muchos archivos en componentes/ ya que todo el sitio/aplicación debe estar compuesto principalmente por módulos pequeños.

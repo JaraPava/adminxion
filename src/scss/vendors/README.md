@@ -1,0 +1,4 @@
+## ¿Qué puedo agregar aquí en vendors?
+La mayoría de los proyectos tendrán una carpeta proveedores/ que contiene todos los archivos CSS de bibliotecas y marcos externos: Normalize, Bootstrap, jQueryUI, FancyCarouselSliderjQueryPowered, etc. Dejarlos a un lado en la misma carpeta es una buena manera de decir "Oye, esto no es mío, no es mi código, no es mi responsabilidad".
+
+Si tiene que anular una sección de cualquier proveedor, le recomiendo que tenga una octava carpeta llamada proveedores-extensiones/ en la que puede tener archivos con el nombre exacto de los proveedores que sobrescriben. Por ejemplo, sellers-extensions/_bootstrap.scss es un archivo que contiene todas las reglas CSS destinadas a volver a declarar algunos de los CSS predeterminados de Bootstrap. Esto es para evitar editar los archivos del proveedor, lo que generalmente no es una buena idea.

@@ -1,0 +1,1085 @@
+@use '../abstracts/' as *;
+
+.modal-register {
+  .modal-dialog {
+    width: 465px;
+
+    border: none;
+
+    .modal-content {
+      border-radius: 1.875rem;
+      height: 740px;
+
+      .modal-header {
+        background-color: #ffffff;
+        display: flex;
+        border-radius: 1.875rem 1.875rem 0 0;
+      }
+
+      .modal-body {
+        // height: 622px;
+        border-radius: 0rem 0rem 1.875rem 1.875rem;
+
+        .row-img-login {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 35%;
+          }
+        }
+
+        .row-modal-title {
+          text-align: center;
+          margin-block: 20px;
+
+          h2 {
+            font-family: 'Poppins-Bold';
+            font-size: 17px;
+          }
+        }
+
+        .row-form {
+          margin-top: 3rem;
+          padding-inline: 1rem;
+          border-radius: 50px;
+          margin-inline: 0px;
+
+          .col-field-email {
+            display: flex;
+            flex-direction: column;
+
+            font-family: 'Poppins-Medium';
+            font-size: medium;
+
+            .input-label {
+              margin-left: 1.2rem;
+              margin-bottom: 10px;
+            }
+
+            input[type='email'] {
+              height: 45px;
+              font-size: 0.9rem;
+              background-color: #D9D9D9;
+              border: none;
+              border-radius: 30px;
+              padding-left: 3rem;
+            }
+          }
+
+          .col-field-pass {
+            margin-block: 30px;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins-Medium';
+            font-size: medium;
+
+            .input-label {
+              margin-left: 1.2rem;
+              margin-bottom: 10px;
+            }
+
+            input[type='password'] {
+              height: 45px;
+              font-size: 0.9rem;
+              background-color: #D9D9D9;
+              border: none;
+              border-radius: 30px;
+              padding-left: 3rem;
+            }
+          }
+
+          .col-field-birthdate {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins-Medium';
+            font-size: medium;
+
+            .input-label {
+              margin-left: 1.2rem;
+              margin-bottom: 10px;
+            }
+
+            input[type='date'] {
+              font-family: 'Poppins-Medium';
+              height: 45px;
+              font-size: 1.2rem;
+              background-color: #D9D9D9;
+              border: none;
+              border-radius: 30px;
+              padding-left: 2rem;
+
+              //Pseudo-elemento que contiene la entrada el día
+              &::-webkit-datetime-edit-day-field {
+                margin-inline: 20px;
+              }
+
+              //Pseudo-elemento que contiene la entrada el mes
+              &::-webkit-datetime-edit-month-field {
+                margin-inline: 20px;
+              }
+
+              //Pseudo-elemento que contiene la entrada el año
+              &::-webkit-datetime-edit-year-field {
+                margin-inline: 20px;
+              }
+
+              &::-webkit-datetime-edit {
+                margin-right: 0.5rem;
+              }
+            }
+          }
+
+          .col-btn-footer {
+            margin-top: 4rem;
+            padding-inline: 7rem;
+
+            a {
+              text-decoration: none;
+              font-family: 'Poppins-light';
+              color: black;
+            }
+
+            a:hover {
+              text-decoration: underline;
+              text-decoration-color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xs) {
+    .modal-dialog {
+      width: 90%;
+      margin: auto;
+      border: none;
+
+      .modal-content {
+        border-radius: 1.875rem;
+        height: 100%;
+
+        .modal-header {
+          background-color: #ffffff;
+          display: flex;
+          border-radius: 1.875rem 1.875rem 0 0;
+        }
+
+        .modal-body {
+          // height: 622px;
+          border-radius: 0rem 0rem 1.875rem 1.875rem;
+
+          .row-img-login {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 35%;
+            }
+          }
+
+          .row-modal-title {
+            text-align: center;
+            margin-block: 20px;
+
+            h2 {
+              font-family: 'Poppins-Bold';
+              font-size: 17px;
+            }
+          }
+
+          .row-form {
+            margin-top: 3rem;
+            padding-inline: 0.5rem;
+            border-radius: 50px;
+            margin-inline: 0px;
+
+            .col-field-email {
+              display: flex;
+              flex-direction: column;
+
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='email'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-pass {
+              margin-block: 30px;
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='password'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-birthdate {
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='date'] {
+                font-family: 'Poppins-Medium';
+                height: 45px;
+                font-size: 0.7rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 2rem;
+
+                //Pseudo-elemento que contiene la entrada el día
+                &::-webkit-datetime-edit-day-field {
+                  margin-inline: 1px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el mes
+                &::-webkit-datetime-edit-month-field {
+                  margin-inline: 1px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el año
+                &::-webkit-datetime-edit-year-field {
+                  margin-inline: 1px;
+                }
+
+                &::-webkit-datetime-edit {
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+
+            .col-btn-footer {
+              margin-top:2rem;
+              padding-inline: 2rem;
+
+              a {
+                text-decoration: none;
+                font-family: 'Poppins-light';
+                color: black;
+              }
+
+              a:hover {
+                text-decoration: underline;
+                text-decoration-color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .modal-dialog {
+      width: 465px;
+
+      border: none;
+
+      .modal-content {
+        border-radius: 1.875rem;
+        height: 740px;
+
+        .modal-header {
+          background-color: #ffffff;
+          display: flex;
+          border-radius: 1.875rem 1.875rem 0 0;
+        }
+
+        .modal-body {
+          // height: 622px;
+          border-radius: 0rem 0rem 1.875rem 1.875rem;
+
+          .row-img-login {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 35%;
+            }
+          }
+
+          .row-modal-title {
+            text-align: center;
+            margin-block: 20px;
+
+            h2 {
+              font-family: 'Poppins-Bold';
+              font-size: 17px;
+            }
+          }
+
+          .row-form {
+            margin-top: 3rem;
+            padding-inline: 1rem;
+            border-radius: 50px;
+            margin-inline: 0px;
+
+            .col-field-email {
+              display: flex;
+              flex-direction: column;
+
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='email'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-pass {
+              margin-block: 30px;
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='password'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-birthdate {
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='date'] {
+                font-family: 'Poppins-Medium';
+                height: 45px;
+                font-size: 1.2rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 2rem;
+
+                //Pseudo-elemento que contiene la entrada el día
+                &::-webkit-datetime-edit-day-field {
+                  margin-inline: 20px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el mes
+                &::-webkit-datetime-edit-month-field {
+                  margin-inline: 20px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el año
+                &::-webkit-datetime-edit-year-field {
+                  margin-inline: 20px;
+                }
+
+                &::-webkit-datetime-edit {
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+
+            .col-btn-footer {
+              margin-top: 4rem;
+              padding-inline: 7rem;
+
+              a {
+                text-decoration: none;
+                font-family: 'Poppins-light';
+                color: black;
+              }
+
+              a:hover {
+                text-decoration: underline;
+                text-decoration-color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .modal-dialog {
+      width: 465px;
+
+      border: none;
+
+      .modal-content {
+        border-radius: 1.875rem;
+        height: 740px;
+
+        .modal-header {
+          background-color: #ffffff;
+          display: flex;
+          border-radius: 1.875rem 1.875rem 0 0;
+        }
+
+        .modal-body {
+          // height: 622px;
+          border-radius: 0rem 0rem 1.875rem 1.875rem;
+
+          .row-img-login {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 35%;
+            }
+          }
+
+          .row-modal-title {
+            text-align: center;
+            margin-block: 20px;
+
+            h2 {
+              font-family: 'Poppins-Bold';
+              font-size: 17px;
+            }
+          }
+
+          .row-form {
+            margin-top: 3rem;
+            padding-inline: 1rem;
+            border-radius: 50px;
+            margin-inline: 0px;
+
+            .col-field-email {
+              display: flex;
+              flex-direction: column;
+
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='email'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-pass {
+              margin-block: 30px;
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='password'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-birthdate {
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='date'] {
+                font-family: 'Poppins-Medium';
+                height: 45px;
+                font-size: 1.2rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 2rem;
+
+                //Pseudo-elemento que contiene la entrada el día
+                &::-webkit-datetime-edit-day-field {
+                  margin-inline: 20px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el mes
+                &::-webkit-datetime-edit-month-field {
+                  margin-inline: 20px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el año
+                &::-webkit-datetime-edit-year-field {
+                  margin-inline: 20px;
+                }
+
+                &::-webkit-datetime-edit {
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+
+            .col-btn-footer {
+              margin-top: 4rem;
+              padding-inline: 7rem;
+
+              a {
+                text-decoration: none;
+                font-family: 'Poppins-light';
+                color: black;
+              }
+
+              a:hover {
+                text-decoration: underline;
+                text-decoration-color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .modal-dialog {
+      width: 465px;
+
+      border: none;
+
+      .modal-content {
+        border-radius: 1.875rem;
+        height: 740px;
+
+        .modal-header {
+          background-color: #ffffff;
+          display: flex;
+          border-radius: 1.875rem 1.875rem 0 0;
+        }
+
+        .modal-body {
+          // height: 622px;
+          border-radius: 0rem 0rem 1.875rem 1.875rem;
+
+          .row-img-login {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 35%;
+            }
+          }
+
+          .row-modal-title {
+            text-align: center;
+            margin-block: 20px;
+
+            h2 {
+              font-family: 'Poppins-Bold';
+              font-size: 17px;
+            }
+          }
+
+          .row-form {
+            margin-top: 3rem;
+            padding-inline: 1rem;
+            border-radius: 50px;
+            margin-inline: 0px;
+
+            .col-field-email {
+              display: flex;
+              flex-direction: column;
+
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='email'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-pass {
+              margin-block: 30px;
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='password'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-birthdate {
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='date'] {
+                font-family: 'Poppins-Medium';
+                height: 45px;
+                font-size: 1.2rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 2rem;
+
+                //Pseudo-elemento que contiene la entrada el día
+                &::-webkit-datetime-edit-day-field {
+                  margin-inline: 20px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el mes
+                &::-webkit-datetime-edit-month-field {
+                  margin-inline: 20px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el año
+                &::-webkit-datetime-edit-year-field {
+                  margin-inline: 20px;
+                }
+
+                &::-webkit-datetime-edit {
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+
+            .col-btn-footer {
+              margin-top: 4rem;
+              padding-inline: 7rem;
+
+              a {
+                text-decoration: none;
+                font-family: 'Poppins-light';
+                color: black;
+              }
+
+              a:hover {
+                text-decoration: underline;
+                text-decoration-color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .modal-dialog {
+      width: 465px;
+
+      border: none;
+
+      .modal-content {
+        border-radius: 1.875rem;
+        height: 740px;
+
+        .modal-header {
+          background-color: #ffffff;
+          display: flex;
+          border-radius: 1.875rem 1.875rem 0 0;
+        }
+
+        .modal-body {
+          // height: 622px;
+          border-radius: 0rem 0rem 1.875rem 1.875rem;
+
+          .row-img-login {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 35%;
+            }
+          }
+
+          .row-modal-title {
+            text-align: center;
+            margin-block: 20px;
+
+            h2 {
+              font-family: 'Poppins-Bold';
+              font-size: 17px;
+            }
+          }
+
+          .row-form {
+            margin-top: 3rem;
+            padding-inline: 1rem;
+            border-radius: 50px;
+            margin-inline: 0px;
+
+            .col-field-email {
+              display: flex;
+              flex-direction: column;
+
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='email'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-pass {
+              margin-block: 30px;
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='password'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-birthdate {
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='date'] {
+                font-family: 'Poppins-Medium';
+                height: 45px;
+                font-size: 1.2rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 2rem;
+
+                //Pseudo-elemento que contiene la entrada el día
+                &::-webkit-datetime-edit-day-field {
+                  margin-inline: 20px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el mes
+                &::-webkit-datetime-edit-month-field {
+                  margin-inline: 20px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el año
+                &::-webkit-datetime-edit-year-field {
+                  margin-inline: 20px;
+                }
+
+                &::-webkit-datetime-edit {
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+
+            .col-btn-footer {
+              margin-top: 4rem;
+              padding-inline: 7rem;
+
+              a {
+                text-decoration: none;
+                font-family: 'Poppins-light';
+                color: black;
+              }
+
+              a:hover {
+                text-decoration: underline;
+                text-decoration-color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xxl) {
+    .modal-dialog {
+      width: 465px;
+
+      border: none;
+
+      .modal-content {
+        border-radius: 1.875rem;
+        height: 740px;
+
+        .modal-header {
+          background-color: #ffffff;
+          display: flex;
+          border-radius: 1.875rem 1.875rem 0 0;
+        }
+
+        .modal-body {
+          // height: 622px;
+          border-radius: 0rem 0rem 1.875rem 1.875rem;
+
+          .row-img-login {
+            display: flex;
+            justify-content: center;
+
+            img {
+              width: 35%;
+            }
+          }
+
+          .row-modal-title {
+            text-align: center;
+            margin-block: 20px;
+
+            h2 {
+              font-family: 'Poppins-Bold';
+              font-size: 17px;
+            }
+          }
+
+          .row-form {
+            margin-top: 3rem;
+            padding-inline: 1rem;
+            border-radius: 50px;
+            margin-inline: 0px;
+
+            .col-field-email {
+              display: flex;
+              flex-direction: column;
+
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='email'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-pass {
+              margin-block: 30px;
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='password'] {
+                height: 45px;
+                font-size: 0.9rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 3rem;
+              }
+            }
+
+            .col-field-birthdate {
+              display: flex;
+              flex-direction: column;
+              font-family: 'Poppins-Medium';
+              font-size: medium;
+
+              .input-label {
+                margin-left: 1.2rem;
+                margin-bottom: 10px;
+              }
+
+              input[type='date'] {
+                font-family: 'Poppins-Medium';
+                height: 45px;
+                font-size: 1.2rem;
+                background-color: #D9D9D9;
+                border: none;
+                border-radius: 30px;
+                padding-left: 2rem;
+
+                //Pseudo-elemento que contiene la entrada el día
+                &::-webkit-datetime-edit-day-field {
+                  margin-inline: 20px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el mes
+                &::-webkit-datetime-edit-month-field {
+                  margin-inline: 20px;
+                }
+
+                //Pseudo-elemento que contiene la entrada el año
+                &::-webkit-datetime-edit-year-field {
+                  margin-inline: 20px;
+                }
+
+                &::-webkit-datetime-edit {
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+
+            .col-btn-footer {
+              margin-top: 4rem;
+              padding-inline: 7rem;
+
+              a {
+                text-decoration: none;
+                font-family: 'Poppins-light';
+                color: black;
+              }
+
+              a:hover {
+                text-decoration: underline;
+                text-decoration-color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+::-webkit-search-cancel-button,
+::-webkit-clear-button {
+  -webkit-appearance: none;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg fill="%23000" fill-opacity=".54" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"/%3E%3Cpath d="M0 0h24v24H0z" fill="none"/%3E%3C/svg%3E');
+  color: rgba(0, 0, 0, 0.54);
+  cursor: pointer;
+  height: 1.5rem;
+  margin-right: 0;
+  width: 1.5rem;
+}
+
+::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  margin-right: 2.7rem;
+  font-size: 25px;
+  opacity: 1;
+  background-image: url('../../assets/icon-calendar.svg');
+  cursor: pointer;
+}
+
+::-webkit-calendar-picker-indicator:hover {
+  -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0 0 px rgba(0, 0, 0, 0.04);
+  -webkit-border-radius: 50%;
+}

@@ -1,0 +1,39 @@
+.row-contact-to-me {
+
+  .col-contact-ubication {
+    display: flex;
+    flex-direction: row;
+
+    h3 {
+      margin-left: 1rem;
+    }
+  }
+
+  .col-contact-phone {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+    h3 {
+      margin-left: 1rem;
+    }
+  }
+
+  .col-contact-phone-other {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3rem;
+  }
+
+  .col-icons-red-socials {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+    img {
+      height: 40px;
+      width: 40px;
+      margin-inline: 1rem;
+    }
+  }
+}
