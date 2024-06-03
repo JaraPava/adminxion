@@ -39,9 +39,6 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap/scss/bootstrap.scss",
-              "node_modules/bootstrap/scss/bootstrap-reboot.scss",
               "src/scss/styles.scss"
             ],
             "scripts": [
@@ -104,9 +101,6 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap/scss/bootstrap.scss",
-              "node_modules/bootstrap/scss/bootstrap-reboot.scss",
               "src/scss/styles.scss"
             ],
             "scripts": [
