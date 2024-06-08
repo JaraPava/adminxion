@@ -4,14 +4,15 @@ Author: Wrappixel
 Email: niravjoshi87@gmail.com
 File: scss
 */
-@use '../abstracts/' as *;
 
-$themecolor: #009efb;
+@use '../abstracts' as *;
+$themecolor: #1976d2;
 $themecolor-dark: #028ee1;
-$topbar: #2a3e52;
-$themecolor-alt: #26c6da;
+$topbar: #1976d2;
 $topbar-alt: #ffffff;
+$themecolor-alt: #26c6da;
 $sidebar-icons: #a6b7bf;
+
 /*******************
 /*Top bar
 *******************/
@@ -43,7 +44,9 @@ $sidebar-icons: #a6b7bf;
 /*******************
 /*General Elements
 *******************/
-
+.lstick{
+    background: $themecolor;
+}
 a.link {
     &:hover,
     &:focus {
@@ -144,6 +147,7 @@ a.link {
       }
     }
 }
+
 .sidebar-nav>ul>li>a i{
     color:$sidebar-icons;
 }

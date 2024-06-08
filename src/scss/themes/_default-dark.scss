@@ -4,38 +4,58 @@ Author: Wrappixel
 Email: niravjoshi87@gmail.com
 File: scss
 */
-@use '../abstracts/' as *;
 
-$themecolor: #009efb;
+@import '../abstracts/';
+
+$themecolor: #398bf7;
 $themecolor-dark: #028ee1;
-$topbar: #2a3e52;
+$topbar: #fff;
+$sidebar:#242a33;
+$sidebar-text: #687384;
+$sidebar-icons: #424a56;
+$sidebar-dark: #1c2128;
+$sidebar-alt:#1c2128;
 $themecolor-alt: #26c6da;
-$topbar-alt: #ffffff;
-$sidebar-icons: #a6b7bf;
+$topbar-alt: #398bf7;
+
 /*******************
 /*Top bar
 *******************/
 
 .topbar {
     background: $topbar;
-    .navbar-header{
-        background: $topbar-alt;
-    }
-
-
-    .top-navbar .navbar-header .navbar-brand .light-logo{
+    .top-navbar .navbar-header .navbar-brand .light-logo {
         display: none;
-        color:rgba(255, 255, 255, 0.8);
+    }
+    .top-navbar{
+        .navbar-nav>.nav-item>span {
+            color:$themecolor;
+        }
     }
     .navbar-light .navbar-nav .nav-item > {
         a.nav-link {
-
-            color: $white!important;
+            color: #a6b7bf;
             &:hover,
             &:focus {
-                 color: rgba(255, 255, 255, 0.8)!important;
+                color:#242a33!important;
             }
         }
+    }
+
+}
+
+.logo-center .topbar {
+    .navbar-header {
+        text-align: center;
+        padding-left: 0px;
+        box-shadow: none;
+    }
+    .top-navbar .navbar-header .navbar-brand .dark-logo {
+        display: none;
+    }
+    .top-navbar .navbar-header .navbar-brand .light-logo {
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.8);
     }
 }
 
@@ -43,6 +63,10 @@ $sidebar-icons: #a6b7bf;
 /*******************
 /*General Elements
 *******************/
+
+a {
+    color: $themecolor;
+}
 
 a.link {
     &:hover,
@@ -79,9 +103,11 @@ a.link {
         }
     }
 }
-.text-themecolor{
-    color:$themecolor!important;
+
+.text-themecolor {
+    color: $themecolor!important;
 }
+
 .profile-tab,
 .customtab {
     li {
@@ -123,27 +149,61 @@ a.link {
 /*sidebar navigation
 *******************/
 
-.label-themecolor{
-    background:$themecolor;
+.card-no-border .left-sidebar,
+.card-no-border .sidebar-nav {
+    background: $sidebar;
+}
+
+.mini-sidebar .sidebar-nav {
+    background: transparent;
+}
+
+@media (min-width: 768px) {
+    .mini-sidebar .sidebar-nav #sidebarnav>li>ul {
+        background: $sidebar-dark;
+    }
+}
+
+.sidebar-nav {
+    background: $sidebar;
+}
+
+.user-profile .profile-text a {
+    color: $sidebar-text!important;
+}
+
+.card-no-border .sidebar-footer {
+    background: $sidebar-dark;
+}
+
+.label-themecolor {
+    background: $themecolor;
 }
 
 .sidebar-nav>ul>li.active>a {
-    color: $themecolor;
+    color: $white;
     border-color: $themecolor;
     i {
-       color: $themecolor;
+        color: $white;
     }
 }
 
 .sidebar-nav ul li a {
     &.active,
     &:hover {
-      color: $themecolor;
-      i {
-        color: $themecolor;
-      }
+        color: $white;
+        i {
+            color: $white;
+        }
     }
 }
-.sidebar-nav>ul>li>a i{
-    color:$sidebar-icons;
+
+.sidebar-nav ul li.nav-small-cap {
+    color: $sidebar-text;
+}
+@media (min-width: 768px){
+    .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a {
+
+        background: $sidebar-alt;
+    }
 }

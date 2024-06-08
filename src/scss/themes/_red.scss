@@ -4,12 +4,12 @@ Author: Wrappixel
 Email: niravjoshi87@gmail.com
 File: scss
 */
-@use '../abstracts/' as *;
 
-$themecolor: #009efb;
+@use '../abstracts' as *;
+$themecolor: #f62d51;
 $themecolor-dark: #028ee1;
-$topbar: #2a3e52;
-$themecolor-alt: #26c6da;
+$topbar: #ef5350;
+$themecolor-alt: #f62d51;
 $topbar-alt: #ffffff;
 $sidebar-icons: #a6b7bf;
 /*******************
@@ -39,11 +39,16 @@ $sidebar-icons: #a6b7bf;
     }
 }
 
+.hdr-nav-bar .navbar .navbar-nav>li.active>a{
+    border-color: $themecolor;
+}
 
 /*******************
 /*General Elements
 *******************/
-
+.lstick{
+    background: $themecolor;
+}
 a.link {
     &:hover,
     &:focus {
