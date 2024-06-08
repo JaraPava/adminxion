@@ -339,3 +339,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+# Directorio AUTH
+Este directorio contiene los componentes para el login y el registro
+para después aprovechar el lazyload, de igual manera aquí estarán sus modulos para estos dos componentes. 
+
