@@ -9,6 +9,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component
     RegisterComponent,
     DashboardComponent,
     PagenotfoundComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
