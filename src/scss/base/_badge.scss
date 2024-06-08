@@ -1,0 +1,54 @@
+@import '../abstracts/';
+/*******************
+ Badge
+******************/
+
+.badge {
+    font-weight: 400;
+}
+
+.badge-xs {
+    font-size: 9px;
+}
+
+.badge-xs,
+.badge-sm {
+    -webkit-transform: translate(0, -2px);
+    -ms-transform: translate(0, -2px);
+    -o-transform: translate(0, -2px);
+    transform: translate(0, -2px);
+}
+
+.badge-success {
+    background-color: $success;
+}
+
+.badge-info {
+    background-color: $info;
+}
+
+.badge-primary {
+    background-color: $primary;
+}
+
+.badge-warning {
+    background-color: $warning;
+    color:$white;
+}
+
+.badge-danger {
+    background-color: $danger;
+}
+
+.badge-purple {
+    background-color: $purple;
+}
+
+.badge-red {
+    background-color: $red;
+}
+
+.badge-inverse {
+    background-color: $inverse;
+}
+

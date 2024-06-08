@@ -4,59 +4,237 @@
 /**
  * Set up a decent box model on the root element
  */
-@import '../abstracts';
+/*
+Template Name: Admin Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+@import '../abstracts/';
+/*******************
+Global Styles
+*******************/
+
+* {
+    outline: none;
+
+}
+
+body {
+    background: $sidebar;
+    font-family: $bodyfont;
+    margin: 0;
+    overflow-x: hidden;
+    color: $bodytext;
+    font-weight: 300;
+
+}
 
 html {
-  box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
+    background: $white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a.link {
+    color: $headingtext;
+    &:hover,
+    &:focus {
+        color: $themecolor;
+    }
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.img-rounded {
+    border-radius: $radius;
+}
+
+html body .mdi:before,
+html body .mdi-set {
+    line-height: initial;
 }
 
 
-/**
- * Make all elements from the DOM innherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+/*******************
+vertical alignment
+*******************/
+
+html body {
+    .vt {
+        vertical-align: top;
+    }
+    .vm {
+        vertical-align: middle;
+    }
+    .vb {
+        vertical-align: bottom;
+    }
 }
 
-.container-fluid {
-  @include media-breakpoint-up(xs) {
-    background-color: rgb(162, 255, 145);
-  }
 
-  @include media-breakpoint-up(sm) {
-    background-color: rgb(137, 63, 255);
-  }
+/*******************
+Opacity
+*******************/
 
-  @include media-breakpoint-up(md) {
-    background-color: rgb(255, 76, 243);
-  }
-
-  @include media-breakpoint-up(lg) {
-    background-color: rgb(78, 196, 255);
-  }
-
-  @include media-breakpoint-up(xl) {
-    background-color: rgb(24, 237, 0);
-  }
-
-  @include media-breakpoint-up(xxl) {
-    background-color: rgb(255, 77, 77);
-  }
+.op-5 {
+    opacity: 0.5;
+}
+.op-3 {
+    opacity: 0.3;
 }
 
-// .accordion {
-//   clear: both;
-// }
 
-/**
- * Basic styles for links
- */
-// a {
-//   color: #ffff;
-//   text-decoration: none;
-// }
+/*******************
+Border
+*******************/
+
+html body {
+    .b-0 {
+        border: none!important;
+    }
+    .b-r {
+        border-right: 1px solid $border;
+    }
+    .b-l {
+        border-left: 1px solid $border;
+    }
+    .b-b {
+        border-bottom: 1px solid $border;
+    }
+    .b-t {
+        border-top: 1px solid $border;
+    }
+    .b-all {
+        border: 1px solid $border!important;
+    }
+}
+
+
+/*******************
+Thumb size
+*******************/
+
+.thumb-sm {
+    height: 32px;
+    width: 32px;
+}
+
+.thumb-md {
+    height: 48px;
+    width: 48px;
+}
+
+.thumb-lg {
+    height: 88px;
+    width: 88px;
+}
+
+.hide {
+    display: none;
+}
+
+.img-circle {
+    border-radius: 100%;
+}
+
+.radius {
+    border-radius: $radius;
+}
+
+/*******************
+List-style-none
+******************/
+
+ul.list-style-none {
+    margin: 0px;
+    padding: 0px;
+    li {
+        list-style: none;
+        a {
+            color: $bodytext;
+            padding: 8px 0px;
+            display: block;
+            text-decoration: none;
+            &:hover {
+                color: $themecolor;
+            }
+        }
+    }
+}
+
+
+/*******************
+dropdown-item
+******************/
+
+.dropdown-item {
+    padding: 8px 1rem;
+    color: $bodytext;
+}
+
+
+/*******************
+Layouts
+******************/
+
+.card-no-border {
+    .card {
+        border: 0px;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+}
+
+.card-no-border .shadow-none {
+    box-shadow: none;
+}
+
+.card-outline-danger,
+.card-outline-info,
+.card-outline-warning,
+.card-outline-success,
+.card-outline-primary {
+    background: $white;
+}
+
+.card-fullscreen {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    overflow: auto;
+}
+
+
+/*******************/
+/*single column*/
+/*******************/
+
+.single-column {
+    .left-sidebar {
+        display: none;
+    }
+    .page-wrapper {
+        margin-left: 0px;
+    }
+}
+
+.fix-width {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}

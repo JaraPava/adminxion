@@ -1,0 +1,47 @@
+@import '../abstracts/';
+/*******************
+Rounds
+*******************/
+
+.round {
+    line-height: 48px;
+    color: $white;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 100%;
+    background: $info;
+    img {
+        border-radius: 100%;
+    }
+}
+
+.round-lg {
+    line-height: 65px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
+
+.round.round-info {
+    background: $info;
+}
+
+.round.round-warning {
+    background: $warning;
+}
+
+.round.round-danger {
+    background: $danger;
+}
+
+.round.round-success {
+    background: $success;
+}
+
+.round.round-primary {
+    background: $primary;
+}
+
