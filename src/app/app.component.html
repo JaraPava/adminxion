@@ -10,3 +10,11 @@
 </div> -->
 
 <h1>Hola mundo</h1>
+
+<!-- Imprimir la variable data de mi component.ts
+<h2>{{ data | json }}</h2> -->
+
+<!-- Imprimir con un NgFor la data de mi app.component.ts -->
+<ul>
+  <li *ngFor="let item of response.data">{{ item | json }}</li>
+</ul>
